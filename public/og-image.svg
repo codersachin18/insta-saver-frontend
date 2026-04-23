@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f1a"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f58529"/>
+      <stop offset="50%" stop-color="#dd2a7b"/>
+      <stop offset="100%" stop-color="#8134af"/>
+    </linearGradient>
+    <linearGradient id="textgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f58529"/>
+      <stop offset="50%" stop-color="#dd2a7b"/>
+      <stop offset="100%" stop-color="#8134af"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Glow orb left -->
+  <circle cx="200" cy="315" r="220" fill="#f58529" opacity="0.07"/>
+  <!-- Glow orb right -->
+  <circle cx="1000" cy="315" r="220" fill="#8134af" opacity="0.07"/>
+  <!-- Glow orb center -->
+  <circle cx="600" cy="315" r="180" fill="#dd2a7b" opacity="0.05"/>
+
+  <!-- Icon background -->
+  <rect x="516" y="175" width="168" height="168" rx="38" fill="url(#grad)" filter="url(#glow)"/>
+
+  <!-- Download icon (arrow + bar) -->
+  <!-- Arrow shaft -->
+  <rect x="592" y="207" width="16" height="58" rx="8" fill="white"/>
+  <!-- Arrow head -->
+  <path d="M600 290 L566 256 h20 v-4 h28 v4 h20 Z" fill="white"/>
+  <!-- Bottom bar -->
+  <rect x="558" y="302" width="84" height="16" rx="8" fill="white"/>
+
+  <!-- Site name -->
+  <text x="600" y="408" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="64" font-weight="900" text-anchor="middle"
+        fill="url(#textgrad)" letter-spacing="-1">Insta Saver</text>
+
+  <!-- Tagline -->
+  <text x="600" y="462" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="500" text-anchor="middle"
+        fill="#9ca3af" letter-spacing="0.3">Download Instagram Reels, Videos &amp; Photos Free</text>
+
+  <!-- Pills -->
+  <rect x="354" y="500" width="148" height="44" rx="22" fill="#ffffff10" stroke="#ffffff18" stroke-width="1"/>
+  <text x="428" y="527" font-family="sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#f9fafb">No Watermark</text>
+
+  <rect x="526" y="500" width="100" height="44" rx="22" fill="#ffffff10" stroke="#ffffff18" stroke-width="1"/>
+  <text x="576" y="527" font-family="sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#f9fafb">HD Quality</text>
+
+  <rect x="650" y="500" width="100" height="44" rx="22" fill="#ffffff10" stroke="#ffffff18" stroke-width="1"/>
+  <text x="700" y="527" font-family="sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#f9fafb">100% Free</text>
+
+  <!-- URL -->
+  <text x="600" y="600" font-family="sans-serif" font-size="18" font-weight="500"
+        text-anchor="middle" fill="#6b7280">instaa-saver.web.app</text>
+</svg>
